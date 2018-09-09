@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Access-Control-Allow-Origin" content="*">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="theme.css" type="text/css"> 
+  <script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+  <script>
+    
+    $(document).ready(function(){
+      $("#btn1").click(function(){
+      $("#d1").load("denglu.html #d1");
+    });
+      $("#btn2").click(function(){
+      $("#d1").load("chengji.html #d2");
+    });
+      $("#btn3").click(function(){
+      $("#d1").load("kecheng.html #d3");
+    });
+    });
+  </script>
+  </head>
+
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-secondary">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="image/微信图片_20180828142715.png" class="d-inline-block align-top" alt="" width="350" height="70"> </a>
+      <ul class="nav nav-pills">
+        <li class="nav-item bg-dark">
+          <a href="#" class="active nav-link bg-secondary">
+            <i class="fa fa-fw fa-home"></i>主页</a>
+        </li>
+      </ul>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
+          
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"  id="btn3">教学管理</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li>
+                <a class="dropdown-item bg-secondary filter-fade-in" href="#">课程浏览</a>
+              </li>
+              <li>
+                <a class="dropdown-item bg-secondary" href="#" >课程添加</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">教师浏览</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">教师添加</a>
+              </li>
+              <li>
+                <a class="dropdown-item bg-secondary bg-gradient" href="#">班级信息</a>
+              </li>
+              <li>
+                <a class="dropdown-item bg-secondary bg-gradient" href="#">添加班级</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">学生信息</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">学生添加</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">考试管理</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">题库管理</a>
+              <a class="dropdown-item" href="#">添加班级</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="btn2" >成绩统计&nbsp;</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#"  >成绩汇总</a>
+              <a class="dropdown-item" href="#">成绩核算</a>
+              <a class="dropdown-item" href="#">成绩分析</a>
+            </div>
+          </li>
+        </ul>
+        <a class="btn navbar-btn ml-2 text-white btn-secondary ml-auto" id="btn1">登录
+          <i class="fa d-inline fa-lg fa-user-circle-o"></i>
+        </a>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="关键字">
+          <button class="btn my-sm-0 btn-outline-dark" type="submit">搜索</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+ 
+
+  <div class="" id="d1"></div>
+<!-- 
+  <div class="p-1" id="d1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <form class="">
+            <div class="form-group">
+              <label>学号：</label>
+              <input type="email" class="form-control" placeholder="请输入学号">
+              <small class="form-text text-muted">本平台保证您的账户密码安全不泄露.</small>
+            </div>
+            <div class="form-group">
+              <label>密码：</label>
+              <input type="password" class="form-control" placeholder="请输入密码">
+              <small class="text-muted form-text">请确认安全后输入.</small>
+            </div>
+            <button type="submit" class="btn btn-success">
+              <i class="fa fa-user fa-fw"></i>登陆</button>
+            <button type="submit" class="btn btn-warning">
+              <i class="fa fa-fw fa-forward"></i>点此注册</button>
+            <button type="submit" class="btn btn-danger">
+              <i class="fa fa-fw fa-blind"></i>忘记密码</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+
+  <!-- <div class="py-3" id="d2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <table class="table w-100 border-success table-hover table-striped table-bordered">
+            <thead>
+              <tr>
+                <th class="">序号</th>
+                <th>学号</th>
+                <th>姓名</th>
+                <th>专业</th>
+                <th>课程</th>
+                <th class="">成绩</th>
+                <th>说明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>20154070</td>
+                <td>Mark</td>
+                <td>软件工程</td>
+                <td>计算机网络</td>
+                <td class="table-success">95</td>
+                <td class="">合格 √</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>20154071</td>
+                <td>Thornton</td>
+                <td>软件工程</td>
+                <td>数据挖掘</td>
+                <td class="table-danger">37</td>
+                <td>&nbsp;不合格 ×</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>20154072</td>
+                <td>the Bird</td>
+                <td>软件工程</td>
+                <td>数据库</td>
+                <td class="table-warning">65</td>
+                <td>合格&nbsp;√</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>20154073</td>
+                <td>Otto</td>
+                <td>软件工程</td>
+                <td>软件开发</td>
+                <td class="table-warning">80</td>
+                <td>合格&nbsp;√</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>20154074</td>
+                <td>Jacob</td>
+                <td>软件工程</td>
+                <td>数据挖掘</td>
+                <td class="table-danger">10</td>
+                <td>不合格&nbsp;×</td>
+              </tr>
+            </tbody>
+          </table>
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#">
+                <span>«</span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">4</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">
+                <span>»</span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div> -->
+
+
+
+      <!-- <div class="row" id="d3">
+        <div class="col-md-12">
+          <form class="form-horizontal" role="form" action="">
+            <div class="form-group form-row">
+              <label class="col-sm-2 col-form-label">课程编号：</label>
+              <div class="col-sm-10">
+                <input type="number" class="form-control" value="1" required="required" disabled=""> </div>
+            </div>
+            <div class="form-group form-row">
+              <label class="col-sm-2 col-form-label">课程名称：</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" required="required" placeholder="请输入课程"> </div>
+            </div>
+            <div class="form-group form-row">
+              <label class="col-sm-2 col-form-label">课程学分：</label>
+              <div class="col-sm-10">
+                <input type="number" class="form-control" required="required" id="inlineFormInput" placeholder="请输入"> </div>
+            </div>
+            <div class="form-group form-row">
+              <label class="col-sm-2 col-form-label">课程学时：</label>
+              <div class="col-sm-10">
+                <input type="number" class="form-control" required="required" placeholder="请输入" id="inlineFormInput"> </div>
+            </div>
+            <div class="form-group form-row">
+              <label class="col-sm-2 col-form-label">课程简介：</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="请输入课程简介"></textarea>
+              </div>
+            </div>
+            <div class="form-group form-row">
+              <label class="col-sm-2 col-form-label">必修课：</label>
+              <div class="col-sm-10">
+                <div class="custom-control custom-radio" id="r1">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" value="on">
+                  <label class="custom-control-label" for="customRadio1">是</label>
+                </div>
+                <div class="custom-control custom-radio" id="r1">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" value="on">
+                  <label class="custom-control-label" for="customRadio1" id="1">否</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group form-row">
+              <label class="col-sm-2 col-form-label">公共课：</label>
+              <div class="col-sm-10">
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" value="on">
+                  <label class="custom-control-label" for="customRadio1">是</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" value="on">
+                  <label class="custom-control-label" for="customRadio">否</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group form-row">
+              <label class="col-sm-2 col-form-label">所属院系：</label>
+              <div class="col-sm-10">
+                <select class="custom-control custom-select">
+                  <option selected="" value="请选择">请选择</option>
+                  <option value="1">文学院</option>
+                  <option value="2">数软学院</option>
+                  <option value="3">物理学院</option>
+                  <option value="4">化学院</option>
+                  <option value="5">医学院</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group form-row">
+              <label class="col-sm-2 col-form-label">所属专业：</label>
+              <div class="col-sm-10">
+                <select class="custom-control custom-select">
+                  <option selected="" value="请选择">请选择</option>
+                  <option value="1">软件工程</option>
+                  <option value="2">计算机科学与技术</option>
+                  <option value="3">软件外包</option>
+                  <option value="4">大数据应用</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group form-row">
+              <label class="col-sm-2 col-form-label">教材封面：</label>
+              <div class="col-sm-10">
+                <div class="input-group">
+                  <input type="file" class="form-control" id="file" placeholder="Username"> </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-success">
+              <i class="fa fa-fw fa-check"></i>提交</button>
+            <button type="submit" class="btn btn-warning" contenteditable="true">
+              <i class="fa fa-fw fa-caret-left fa-lg"></i>取消</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="py-5 text-white bg-secondary">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 mt-3 text-center">
+          <p class="filter-gradient filter-fade-in">© Copyright 2018 青岛大学 .</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">201540704431 张泽森&nbsp;&nbsp;
+    <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
+  </pingendo>
+</body>
+
+</html>
